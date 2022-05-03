@@ -52,3 +52,35 @@ filled.contour(res$qin, xlab="Time", ylab="Distance")
 
 ```
 
+## Assignment -
+Try running the diffusion model with different time steps, space steps and parameters
+
+Save two examples of diffusion filled contour plot and load to Gauchospace and come to class prepared to discuss why the two plots are different
+
+
+```{r}
+# changes diffusivity and other parameters particularly
+# diffusivity, dx and dt
+res=diff1(initialC=10,nx=10,dx=1,nt=10,dt=30,D=0.006,area=1)
+
+filled.contour(res$conc, xlab="Time", ylab="Distance")
+
+
+# we can also see how much material moved from place to place each time step
+filled.contour(res$qin, xlab="Time", ylab="Distance")
+
+
+# play with time step, space step and parameters
+
+
+```
+
+
+
+
+
+
+
+
+
+
